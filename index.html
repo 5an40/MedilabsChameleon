@@ -82,60 +82,26 @@
         <a-entity mindar-image-target="targetIndex: 0" id="ar-target">
             
             <!-- 1. Самая левая -->
-            <a-plane src="./spritesheet.png" 
-                     position="-0.38 0.35 0.05" rotation="0 20 0" width="0.12" height="0.12" 
-                     material="shader: flat; transparent: true; side: double;"
-                     sprite-animator="columns: 4; rows: 3; fps: 22"
-                     animation__move="property: position; from: -0.38 0.35 0.05; to: -0.45 0.48 0.1; dir: alternate; dur: 2200; loop: true; easing: easeOutBack"
-                     animation__rot="property: rotation; to: 0 45 15; dir: alternate; dur: 1100; loop: true">
-            </a-plane>
+            
 
             <!-- 2. Левее центра -->
-            <a-plane src="./spritesheet.png" 
-                     position="-0.22 0.6 0.1" rotation="0 10 0" width="0.15" height="0.15" 
-                     material="shader: flat; transparent: true; side: double;"
-                     sprite-animator="columns: 4; rows: 3; fps: 25"
-                     animation__move="property: position; from: -0.22 0.6 0.1; to: -0.15 0.72 0.05; dir: alternate; dur: 1800; delay: 300; loop: true; easing: cubicBezier(0.1, 0.9, 0.2, 1)"
-                     animation__hover="property: position; to: -0.2 0.65 0.1; dir: alternate; dur: 500; loop: true">
-            </a-plane>
+           
 
             <!-- 3. По центру левее (повыше) -->
-            <a-plane src="./spritesheet.png" 
-                     position="-0.08 0.52 0" rotation="0 5 0" width="0.18" height="0.18" 
-                     material="shader: flat; transparent: true; side: double;"
-                     sprite-animator="columns: 4; rows: 3; fps: 20"
-                     animation__move="property: position; from: -0.08 0.52 0; to: -0.02 0.68 0.05; dir: alternate; dur: 2500; delay: 100; loop: true; easing: easeInOutElastic">
-            </a-plane>
+        
 
             <!-- 4. Спираль -->
-            <a-entity position="0.08 0.90 0.05" 
-                      animation="property: rotation; to: 0 360 0; dur: 4000; loop: true; easing: linear">
-                <a-plane src="./spritesheet.png" 
-                         position="0.15 0 0" 
-                         rotation="0 -5 0" 
-                         width="0.14" height="0.14" 
-                         material="shader: flat; transparent: true; side: double;"
-                         sprite-animator="columns: 4; rows: 3; fps: 24"
-                         animation__bob="property: position; to: 0.15 0.15 0; dir: alternate; dur: 1500; loop: true; easing: easeInOutSine">
-                </a-plane>
-            </a-entity>
+           
 
             <!-- 5. Правее центра -->
             <a-plane src="./spritesheet.png" 
-                     position="0.24 0.28 -0.05" rotation="0 -15 0" width="0.16" height="0.16" 
+                     position="0.9 0.9 0.05" rotation="0 0 0" width="0.16" height="0.16" 
                      material="shader: flat; transparent: true; side: double;"
-                     sprite-animator="columns: 4; rows: 3; fps: 23"
-                     animation__move="property: position; from: 0.24 0.28 -0.05; to: 0.32 0.42 0; dir: alternate; dur: 2000; delay: 200; loop: true; easing: easeOutExpo">
+                     sprite-animator="columns: 6; rows: 6; fps: 24">
             </a-plane>
 
             <!-- 6. Самая правая -->
-            <a-plane src="./spritesheet.png" 
-                     position="0.68 0.26 0" rotation="0 -25 0" width="0.11" height="0.11" 
-                     material="shader: flat; transparent: true; side: double;"
-                     sprite-animator="columns: 4; rows: 3; fps: 26"
-                     animation__move="property: position; from: 0.68 0.26 0; to: 0.78 0.38 -0.05; dir: alternate; dur: 1400; delay: 400; loop: true; easing: easeOutBack"
-                     animation__rot="property: rotation; to: 10 -50 -10; dir: alternate; dur: 700; loop: true">
-            </a-plane>
+           
 
         </a-entity>
         
